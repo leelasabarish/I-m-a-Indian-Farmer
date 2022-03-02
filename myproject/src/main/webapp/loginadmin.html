@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin login page</title>
+
+<script>
+
+
+var myInput = document.getElementById("pass");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+var Username=document.getElementById("uname");  
+
+
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+  
+}
+</script>
+<style type="text/css">
+Body {
+	background-color: white;
+	text-align: center;
+	width: 75%, 75%;
+	border-color: black;
+	background-repeat: no-repeat;
+	margin: 100px;
+	background-size: cover;
+}
+
+footer {
+	text-align: center;
+	padding: 10px;
+	background-color: black;
+	color: whitesmoke;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#main {
+	width: 550px;
+	height: 230spx;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	padding-left: 10px;
+	margin-top: 150px;
+	border-top: 3px double #f1f1f1;
+	border-bottom: 3px double #f1f1f1;
+	padding-top: 20px;
+}
+
+#main table {
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* css code for textbox */
+#main .tb {
+	height: 28px;
+	width: 230px;
+	border: 1px solid red;
+	color: burlywood;
+	font-weight: bold;
+	border-left: 5px solid #f7f7f7;
+	opacity: 0.9;
+}
+
+/* css code for button*/
+#main .btn {
+	width: 80px;
+	height: 32px;
+	outline: none;
+	font-weight: bold;
+	border: 0px solid black;
+	text-shadow: 0px 0.5px 0.5px #fff;
+	border-radius: 2px;
+	font-weight: 600;
+	color: black;
+	letter-spacing: 1px;
+	font-size: 14px;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+#main .btn:hover {
+	background-color: black;
+	outline: none;
+	border-radius: 2px;
+	color: #f1f1f1;
+	border: 1px solid #f1f1f1;
+}
+
+.container {
+	background-color: orange;
+	padding: 20px;
+	text-align: center;
+}
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+
+</style>
+
+</head>
+
+<body
+	background="https://images.unsplash.com/photo-1540666528576-9101619e93b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=kevin-susanto-1uKojQEQ218-unsplash.jpg">
+	<!-- Main div code -->
+	<div id="main">
+		<div class="h-tag">
+			<h2>Admin</h2>
+		</div>
+		
+		<div class="container">
+			
+					<form method="post" onsubmit="return validate()" action="AdminLogin">
+						UserName : <input type="text" name="uname"> <br />
+						Password : <input type="password" name="pass"> <br /> 
+						<input type="submit" value="Login" />
+						
+						
+
+					</form>
+					
+					<a href="index.html"><button>Back</button></a>
+					
+					
+				
+	</div class ="container">				
+</body>
+</html>
