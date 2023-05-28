@@ -4,63 +4,15 @@
 "I am an Indian farmer" is a Maven-based Java project that aims to assist farmers in managing their fields effectively. This project allows registered farmers to log in to their accounts and access information about the devices and equipment required for their fields. It also provides up-to-date information about the latest agricultural technology and methods from around the world and updates farmers on government schemes and their eligibility. The project can be accessed from anywhere in the world, and its primary goal is to support and uplift Indian farmers.
 
 ## Getting Started
-Here is a simple flow chart:
+#### Here is a simple flow chart:
+![iam a indian farmer drawio](https://github.com/leelasabarish/Im-an-IndianFarmer/assets/74003155/13033b19-0628-49ae-b68e-8e7e0b8a317d)
 
-```
-graph TD;
 
-  +-------------------+
-  |                   |
-  |     Home Page     |
-  |                   |
-  +-------------------+
-          |        
-          | Register
-          V
-  +-------------------+
-  |                   |
-  |     Registration  |
-  |                   |
-  +-------------------+
-          |        
-          | Login
-          V
-  +-------------------+
-  |                   |
-  |      Login Page   |
-  |                   |
-  +-------------------+
-          |         (User)
-          |         /     \
-          |       /        \
-          |     /            \
-          V   /                \
-  +-------------------+   +-------------------+
-  |                   |   |                   |
-  |   User Dashboard  |   |   Admin Dashboard |
-  |                   |   |                   |
-  +-------------------+   +-------------------+
-          |                       |
-          | Logout                | Logout
-          V                       V
-  +-------------------+   +-------------------+
-  |                   |   |                   |
-  |   Logout Page     |   |    Logout Page    |
-  |                   |   |                   |
-  +-------------------+   +-------------------+
-          |                       |
-          | Back to Home Page     | Back to Home Page
-          V                       V
-  +-------------------+   +-------------------+
-  |                   |   |                   |
-  |   Error Page      |   |    Error Page     |
-  |                   |   |                   |
-  +-------------------+   +-------------------+
 
     
     
    
-```
+
 #### Pre-Requirements
 The system should have a 2-core processor with a speed of 2 GHz or higher, a minimum of 4 GB RAM, and at least 10 GB of free hard drive space. Java JDK should be downloaded and installed.
 #### Softwares
@@ -142,5 +94,13 @@ Testing is a crucial part of software development. JUnit is used for unit testin
         Additionally, the project could be integrated with social media platforms to increase user engagement. 
 
 </details>
+
+## Gallery 
+#### Here are the few photos of the project
+<img width="1436" alt="Screenshot 2023-05-02 at 4 56 27 PM" src="https://github.com/leelasabarish/Im-an-IndianFarmer/assets/74003155/2ad44e57-fd90-455f-b402-6dea4fdf89a2">
+<img width="1437" alt="Screenshot 2023-05-02 at 4 57 11 PM" src="https://github.com/leelasabarish/Im-an-IndianFarmer/assets/74003155/0accb7c4-cc15-41b6-856b-1cdfeaf97c79">
+<img width="1431" alt="Screenshot 2023-05-02 at 4 57 42 PM" src="https://github.com/leelasabarish/Im-an-IndianFarmer/assets/74003155/78d823c7-f9bc-4e0c-bd2c-88bcd3d2a24f">
+<img width="1434" alt="Screenshot 2023-05-02 at 4 59 30 PM" src="https://github.com/leelasabarish/Im-an-IndianFarmer/assets/74003155/16442f7f-a53e-4d8e-b256-bbf70a529bc8">
+
 
 
