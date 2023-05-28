@@ -16,13 +16,13 @@
 #### Pre-Requirements
 The system should have a 2-core processor with a speed of 2 GHz or higher, a minimum of 4 GB RAM, and at least 10 GB of free hard drive space. Java JDK should be downloaded and installed.
 #### Softwares
-* Eclipse IDE 
-* MySQL driver 
+*   Spring Tool Suite 
+*   MySQL driver 
 *	MySQL database 
 *	Apache Tomcat 
 *	Postman 
 #### Description
- Eclipse IDE is used to write Java code, and MySQL driver is used to connect with the MySQL database. Apache Tomcat is required to deploy the web server, and Postman is used to test the APIs. AWS and Freenom accounts are needed for cloud deployment and domain name provisioning.
+Spring Tool Suiteis used to write Java code, and MySQL driver is used to connect with the MySQL database. Apache Tomcat is required to deploy the web server, and Postman is used to test the APIs. AWS and Freenom accounts are needed for cloud deployment and domain name provisioning.
  
 ## Guide
 
@@ -52,30 +52,26 @@ The database for the project includes three tables:
 The technologies used in this project 
 
 The project uses the following technologies:
-1.	HTML, CSS, and JavaScript for web development
-2.	XML, DTD, and XSD for data validation
-3.	Servlets and JSP for frontend connectivity to the backend
-4.	Spring Boot and Spring MVC for the backend
-5.	JDBC and Hibernate Framework for database connectivity
-6.	Hibernate Query Language for querying the database
-7.	Apache Tomcat as the web server
-8.	MySQL for database management
-9.  AWS and Freenom are used for cloud deployment and domain name provisioning.
+1.	HTML, CSS, and JavaScript for web development  
+2.	Spring Boot and Spring MVC for the backend		
+3.	Apache Tomcat as the web server
+4.	Postman for API testing
+5.  AWS and Freenom are used for cloud deployment and domain name provisioning.
 
 ## Code Structure
 #### The project is divided into four modules
 ##### Basic, Separation, Functionality, and Fall. 
 - The Basic module contains the home, sign-in, sign-up, and about pages. :+1:
 - The Separation module contains the user and admin pages. :+1:
-- The Functionality module contains the admin working and user working pages. :+1:
+- The Functionality module contains the Admin CRUD Operations and User(Estimates and Eligibility). :+1:
 - The Fall module contains the logout and error pages. :+1:
    
 
 > scr directory contains all of the source material for building the project.
-1. CreateUserServlet.java
-2. AdminLogin.java
-3. LoginServlet.java
-4. logout.java
+1. CreateUser
+2. AdminLogin
+3. UserLogin
+4. Logout
 
 
 
